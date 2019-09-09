@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<head>
+  <title>
+    node.js基础 &middot; sprite&healthy
+  </title>
+  
+  <meta name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=1"  />
+  
+  <meta http-equiv="X-UA-Compatible"  content="IE=edge"  />
+  
+  <meta http-equiv="content-type"  content="text/html; charset=utf-8"  />
+  
+  <meta name="google-site-verification"  content="YIKi1rBnyUaS-DMYiluseI5kZzTwjCkTFmKkSkMZDJk"  />
+  
+  <meta name="baidu-site-verification"  content="bEFDJ1LvXb"  />
+  
+  <meta name="yandex-verification"  content="52253e02830b443c"  />
+  
+  <link rel="profile"  href="//gmpg.org/xfn/11"  />
+  
+  <link rel="alternate"  href="/atom.xml"  title="RSS"  type="application/rss+xml"  />
+  
+  <link rel="apple-touch-icon-precomposed"  href="//www.gravatar.com/avatar/a12c5fff23dde00df79af9aca4e7b6e4?d=wavatar&s=144"  />
+  
+  <link rel="shortcut icon"  href="//www.gravatar.com/avatar/a12c5fff23dde00df79af9aca4e7b6e4?d=wavatar&s=32"  />
+  
+  <link rel="stylesheet"  href="//cdn.jsdelivr.net/gh/wu-kan/wu-kan.github.io/public/css/poole.css"  />
+  
+  <link rel="stylesheet"  href="//cdn.jsdelivr.net/gh/wu-kan/wu-kan.github.io/public/css/syntax.css"  />
+  
+  <link rel="stylesheet"  href="//cdn.jsdelivr.net/gh/wu-kan/wu-kan.github.io/public/css/lanyon.css"  />
+  
+  <link rel="stylesheet"  href="/public/css/wu-kan.css"  />
+  
+  <link rel="stylesheet"  href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css"  />
+  
+</head>
+
+<body
+  class="theme-base-0d layout-reverse sidebar-overlay">
+  
+  <script  src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js" >
+  </script>
+  
+  <script  src="//cdn.jsdelivr.net/npm/ribbon.js/dist/ribbon.min.js" >
+  </script>
+  
+  <script  src="//cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js" >
+  </script>
+  
+  <script  src="/public/js/prism.js" >
+  </script>
+  
+  <script  src="/public/js/mermaid.js"  js="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"  stylesheet="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css"  markdown_expand="true" >
+  </script>
+  
+  <script  src="/public/js/katex.js"  js="//cdn.jsdelivr.net/npm/katex/dist/katex.min.js"  auto_render="//cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"  stylesheet="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css"  delimiters="true" >
+  </script>
+  
+  <script  src="/public/js/baidu_push.js" >
+  </script>
+  
+  <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" />
+  <!-- Toggleable sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-item">
+      
+      <div class="ih-item circle effect right_to_left">
+        <a class="blog-button" title="ggchzzz">
+          <img class="img" src="//www.gravatar.com/avatar/a12c5fff23dde00df79af9aca4e7b6e4?d=wavatar&s=600" alt="img" />
+          <small class="info info-back">
+            <br>coder & coder<br>Have a try!
+          </small>
+        </a>
+      </div>
+      
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=52 src="//music.163.com/playlist/447116025/321306026/?userid=321306026&auto=0&height=32"></iframe>
+      <div class="sidebar-social">
+        
+        <a href="/atom.xml" title="rss">
+          <i class="fas fa-rss fa-fw"></i>
+        </a>
+        
+        <a href="mailto:ggchzzz@163.com" title="ggchzzz@163.com">
+          <i class="fas fa-envelope fa-fw"></i>
+        </a>
+        
+        <a href="//codeforces.com/profile/ggchzzz" title="ggchzzz">
+          <i class="fas fa-chart-bar fw"></i>
+        </a>
+        
+        <a href="//vjudge.net/user/ggchzzz" title="ggchzzz">
+          <i class="fas fa-smile fa-fw"></i>
+        </a>
+        
+        <a href="" title="563725914">
+          <i class="fab fa-qq fa-fw"></i>
+        </a>
+        
+        <a href="" title="ggchzzz">
+          <i class="fab fa-weixin fa-fw"></i>
+        </a>
+        
+        <a href="//github.com/ggchzzz" title="github">
+          <i class="fab fa-github fa-fw"></i>
+        </a>
+        
+        <a href="//www.zhihu.com/people/ce-shi-zhang-hao-97-68/activities" title="zhihu">
+          <i class="fab fa-zhihu fa-fw"></i>
+        </a>
+        
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fas fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fas fa-home fa-fw"></i> 最新
+      </a>
+      
+      <a class="sidebar-nav-item" href="/about">
+        <i class="fab fa-readme fa-fw"></i> 关于
+      </a>
+      
+      <a class="sidebar-nav-item" href="/comments">
+        <i class="fas fa-comments fa-fw"></i> 留言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fas fa-archive fa-fw"></i> 归档
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <div>
+        <script src="/public/simple-jekyll-search/autoloader.js"></script>
+      </div>
+      
+      
+      <div>
+        <script src="/public/js/jekyll_table_of_contents.js"></script>
+      </div>
+      
+      
+      <div>
+        <script src="/public/js/run_time.js"></script>
+      </div>
+      
+      
+      <div>
+        <i class="fas fa-eye fa-fw"></i>
+        <span id="busuanzi_value_page_pv"></span>次
+      </div>
+      <div>
+        <i class="fas fa-paw fa-fw"></i>
+        <span id="busuanzi_value_site_pv"></span>枚
+      </div>
+      <div>
+        <i class="fas fa-user-friends fa-fw"></i>
+        <span id="busuanzi_value_site_uv"></span>人
+      </div>
+      <script src="//cdn.jsdelivr.net/npm/busuanzi/bsz.pure.mini.js"></script>
+      
+      
+      <div>
+        <i class="fas fa-copyright fa-fw"></i>
+        2019
+        ggchzzz
+        <a href="http://www.ggchzzz.com">View on GitHub</a>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+  <div class="wrap">
+    <h1 class="masthead masthead-title">
+      <div class="container">
+        node.js基础
+        <a href="/">
+          <small>sprite&healthy</small>
+        </a>
+      </div>
+    </h1>
+    <div class="container content">
+      <div class="post">
+  
+  <small class="post-date">
+    
+    <i class="fas fa-calendar-day"></i>
+    06 Sep 2019
+    
+    
+    <i class="fas fa-file-word"></i>
+    2714字
+    
+    
+    <i class="fas fa-coffee"></i>
+    10分
+    
+    
+    <span id="/posts/jvascript/node.js%E5%9F%BA%E7%A1%80" class="leancloud-visitors" data-flag-title="node.js基础">
+      <i class="far fa-eye"></i>
+      <span class="leancloud-visitors-count"></span>次
+    </span>
+    
+    
+    <i class="fas fa-tag"></i>
+    node.js
+    
+    </br>
+    <i class="fab fa-creative-commons"></i> <a rel="license" href="//creativecommons.org/licenses/by-sa/4.0/deed.zh">BY-SA 4.0</a>（除特别声明或转载文章外）
+  </small>
+  
+  
+  <div class="post-content">
+    <h6 id="1-node命令行">1. node命令行</h6>
+<pre><code class="language-jvascript">node -e "console.log('hello world');"
+</code></pre>
+<h6 id="2-noderepl模式">2. nodeREPL模式</h6>
+<p>REPL(Read-eval-print loop),即输入-求值-输出循环。如果你用过python，就会知道在终端下运行无参数的python命令或者使用pythonIDLE打开shell,可以进入一个即时求值的运行环境。node.js也有这样的功能,运行无参数的node将会启动一个javascript的交互式shell；</p>
+<pre><code class="language-jvascript">$ node
+&gt;console.log("hello world")
+hello world
+undefined
+</code></pre>
+<p>undefined为函数返回值</p>
+<h6 id="3-创建http服务器">3. 创建http服务器</h6>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//app.js
+const http=require('http')
+http.createServer(function(req,res){
+ res.writeHead(200,('Content-Type':'text/html'));
+ res.write('&lt;h1&gt;Node.js&lt;/h1&gt;');
+ res.end('&lt;p&gt;Hello World&lt;/p&gt;');
+}).listen(3000)
+console.log("HTTP server is listening at port:3000!");
+</code></pre></div></div>
+<h6 id="4-阻塞与线程">4. 阻塞与线程</h6>
+<p>阻塞模式下,一个线程只能处理一项任务,想要提高吞吐量必须通过多线程.而非阻塞模式下，一个线程永远在执行计算操作，这个线程所使用的cpu核心利用率永远是100%；I/O以事件的方式通知.在阻塞模式下，多线程往往能提高系统吞吐量,因为一个线程阻塞时还有其他线程在工作,多线程可以让CPU资源不被阻塞中的线程浪费，而在非阻塞模式下，线程不会被I/O阻塞，永远在利用CPU。多线程带来的好处仅仅是多核CPU的情况利用更多的核.而Node.js的单线程也能带来更多的好处,这就是为什么Node.js使用了单线程,非阻塞事件编程方式</p>
+<h6 id="5-回调函数">5. 回调函数</h6>
+<p>回调函数是异步的方式，同步方式即执行完同步函数后，再执行后面</p>
+<h6 id="6-事件">6. 事件</h6>
+<pre><code class="language-jvascript">//event.js
+var EventEmitter=require("event”).EventEmitter
+var event=new EventEmitter()
+event.emit("some_event",function(){
+console.log('some_event occoured.');
+})
+setTimeout(function(){
+event.emit('some_event');
+},1000)
+</code></pre>
+<p>运行这段代码后，1秒后控制台输出了some_event_occoured。其原理是event对象注册了事件some_event的一个监听器,然后我们通过setTimeout在1000毫秒以后向event对象发送事件some_event，此时会调用some_event的监听器<br />
+Node.js 事件循环机制
+Node.js程序由事件循环开始，到事件循环结束,所有的逻辑都是事件的回调函数,所有Node.js始终在事件循环中,程序入口就是事件循环第一个事件的回调函数.事件的回调函数在执行过程中,可能会发出I/O请求或直接发射事件，执行完毕后再返回事件循环，事件循环会检查事件队列中有没有未处理事件，直到程序结束.</p>
+
+<h6 id="7-模块和包">7. 模块和包</h6>
+<p>模块和包是Node.js最重要的支柱.开发一个具有一定规模的程序不可能只用一个文件，通常需要把各个功能拆分，封装，组合起来，模块正是为了实现这种方式而诞生的，在浏览器环境中,脚本模块的拆分和组合通常使用HTML的script标签来实现。Node.js提供了require函数来调用其它模块，而且模块都是基于文件的，机制十分简单，Node.js的模块和包机制的实现参照了CommonJS的标准,但未完全遵循,不过两者的区别并不大.</p>
+
+<p>模块和包是没有本质区别的，两个概念也经常混用,如果要辨析，那么可以把包理解是实现了某个功能模块的集合，用于发布和维护.对使用者来说，模块和包的区别是透明的，因此经常不作区分。</p>
+
+<ol>
+  <li>创建模块：Node.js提供了exports和require两个对象，其中exports和require两个对象，其中exports是模块公开的接口，requeire用于从外部获取一个模块的接口，即所获取模块的exports对象
+    <pre><code class="language-jvascript"> //module.js
+ var name;
+ exports.setname=function(thyName){
+ name=thyname;
+ }
+ exports.sayHello=function(){
+ console.log("hello"+name);
+ };
+ //getmodules.js
+ var mymodule=require('./module');
+ module.setName('BYVoid')；
+ module.sayHello();
+</code></pre>
+
+    <p>运行node getmodule.js,结果是:</p>
+  </li>
+</ol>
+
+<pre><code class="language-jvascript">    Hello BYVoid
+</code></pre>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2. 单次加载：无论调用多少次require，获得的模块都是同一个.  
+
+3. 覆盖exports：有时候我们只是想把一个对象封装到模块中.  
+</code></pre></div></div>
+
+<pre><code class="language-jvascript">  //hello.js
+  function Hello(){
+  var name;
+  this.setName=function(thyName){
+  name=thyName
+  };
+  this.sayHello=function(){
+  console.log("Hello"+name);
+  };
+  };
+  module.exports=Hello;
+</code></pre>
+
+<p>这样我们就可以直接获得这个对象了，注意模块唯一的变化是使用了modules.exports=Hello代替了exports.Hello=Hello.在外部引用该模块时，其接口对象就是要输出
+Hello对象本身.而不是原先的exports。事实上.exports本身仅仅是一个普通对象,即{}，他专门用来声明接口，本质上是通过他为模块闭包的内部建立一个有限访问的接口。因为它没有任何特殊的地方，所以可以利用其它东西来代替,譬如我们上面的例子Hello对象.(不可以通过对exports直接赋值代替对modules.exports赋值，exports实际上只是一个和module.exports指向同一个对象的变量,它本身会在模块执行结束后释放，但module不会，因此只能通过指定module。exports来改变访问接口)</p>
+
+<h6 id="8-调试">8. 调试</h6>
+<p>node debug index.js (常见命令参考官网)<br />
+node –debug-brk  debug.js (server) 
+node debug 127.0.0.1:5858 (clent)</p>
+
+  </div>
+  
+  
+  <div class="reward">
+    <button id="rewardButton" disable="enable"
+      onclick="var qr = document.getElementById('rewardQRs'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>如果我的博客帮助到你，可以请我喝一杯咖啡~</span>
+    </button>
+    <div id="rewardQRs">
+      <table>
+        <tr>
+          
+          <td id="wechat" class="reward_qr">
+            <img id="wechat_qr" src="/public/image/wechatpay.jpg" alt="ggchzzzwechat">
+          </td>
+          
+          <td id="alipay" class="reward_qr">
+            <img id="alipay_qr" src="/public/image/alipay.jpg" alt="ggchzzzalipay">
+          </td>
+          
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+</div>
+
+
+<script src="/public/js/valine.js"></script>
+
+
+    </div>
+  </div>
+  <label for="sidebar-checkbox" class="sidebar-toggle fas fa-bars"></label>
+</body>
+
+</html>

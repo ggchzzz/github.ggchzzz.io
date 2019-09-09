@@ -5,9 +5,9 @@ kramdown:
 permalink: /posts/:categories/:title # 博文目录
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/public`前也要加，即`/your_baseurl/public`。这一项结尾不要有'/'
 
-title: wu-kan
-url: http://wu-kan.github.io
-author: WuK
+title: sprite&healthy
+url: http://www.ggchzzz.com
+author: ggchzzz
 
 head: # 删改前确定知道自己在做什么
 - tag: meta # Enable responsiveness on mobile devices
@@ -172,40 +172,40 @@ sidebar:
   avatar: # 侧边栏显示的头像
     enable: true
     img: //www.gravatar.com/avatar/a12c5fff23dde00df79af9aca4e7b6e4?d=wavatar&s=600 # 头像的地址
-    info: <br>SYSU17级在读<br>计科超算方向<br>永远喜欢水野爱<br>田宫例四驱车<br>ACMer # 头像背后的信息
-  description: '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=52 src="//music.163.com/outchain/player?type=0&id=155059595&auto=0&height=32"></iframe>'
+    info: <br>coder & coder<br>Have a try! # 头像背后的信息
+  description: '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=52 src="//music.163.com/playlist/447116025/321306026/?userid=321306026&auto=0&height=32"></iframe>'
   social:
   - title: rss
     href: /atom.xml
     class: 'fas fa-rss fa-fw'
-  - title: wu.kan@foxmail.com # email
-    href: mailto:wu.kan@foxmail.com
+  - title: ggchzzz@163.com # email
+    href: mailto:ggchzzz@163.com
     class: 'fas fa-envelope fa-fw'
-  - title: WuK # codeforces
-    href: //codeforces.com/profile/WuK
+  - title: ggchzzz # codeforces
+    href: //codeforces.com/profile/ggchzzz
     class: 'fas fa-chart-bar fw'
-  - title: WuK # vjudge
-    href: //vjudge.net/user/WuK
+  - title: ggchzzz # vjudge
+    href: //vjudge.net/user/ggchzzz
     class: 'fas fa-smile fa-fw'
-  - title: 942759535 # qq
+  - title: 563725914 # qq
     class: 'fab fa-qq fa-fw'
-  - title: Wu-_-Kan # weixin
+  - title: ggchzzz # weixin
     class: 'fab fa-weixin fa-fw'
   - title: github
-    href: //github.com/wu-kan
+    href: //github.com/ggchzzz
     class: 'fab fa-github fa-fw'
   - title: zhihu
-    href: //www.zhihu.com/people/wu.kan/activities
+    href: //www.zhihu.com/people/ce-shi-zhang-hao-97-68/activities
     class: 'fab fa-zhihu fa-fw'
   nav:
-  - title: '<i class="fas fa-home fa-fw"></i> 首页'
+  - title: '<i class="fas fa-tags fa-fw"></i> 标签'
+    href: /tags
+  - title: '<i class="fas fa-home fa-fw"></i> 最新'
     href: /
   - title: '<i class="fab fa-readme fa-fw"></i> 关于'
     href: /about
   - title: '<i class="fas fa-comments fa-fw"></i> 留言'
     href: /comments
-  - title: '<i class="fas fa-tags fa-fw"></i> 标签'
-    href: /tags
   - title: '<i class="fas fa-archive fa-fw"></i> 归档'
     href: /archive
 
@@ -247,7 +247,7 @@ run_time:
 
 copyright:
   enable: true
-  text: <a href="//github.com/wu-kan/wu-kan.github.io">View on GitHub</a>
+  text: <a href="http://www.ggchzzz.com">View on GitHub</a>
 
 index:
   showtag:
@@ -284,8 +284,8 @@ valine:
   enable: true
   autoloader: /public/js/valine.js
   src: //cdn.jsdelivr.net/npm/valine
-  appId: 9hABRddSuEkTgqLrt1VSK5B1-gzGzoHsz
-  appKey: NJ7RwmgrxsF7KDzlqU7YewlL
+  appId: 1YGzAgOfmy3CDakvmRhWunLK-gzGzoHsz
+  appKey: KGVDBxvNhIHMdR8APxVlO09j
   notify: true # 评论回复邮件提醒
   verify: true # 验证码服务
   avatar: identicon

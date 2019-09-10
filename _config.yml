@@ -173,7 +173,7 @@ sidebar:
     enable: true
     img: //www.gravatar.com/avatar/a12c5fff23dde00df79af9aca4e7b6e4?d=wavatar&s=600 # 头像的地址
     info: <br>coder & coder<br>Have a try! # 头像背后的信息
-  description: '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=52 src="//music.163.com/playlist/447116025/321306026/?userid=321306026&auto=0&height=32"></iframe>'
+  description: '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=52 src="//music.163.com/playlist/?id=513128681&auto=0&height=32"></iframe>'
   social:
   - title: rss
     href: /atom.xml

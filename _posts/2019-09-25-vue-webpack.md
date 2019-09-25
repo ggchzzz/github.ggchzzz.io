@@ -466,7 +466,8 @@ module.exports = {};
         ```
 
         index.html
-        ```js
+    
+ ```js
         <!DOCTYPE html>
         <html lang="en">
 
@@ -481,9 +482,8 @@ module.exports = {};
             <div id="app"></div>
             <script src="/dist/build.js"></script>
         </body>
-
         </html>
-        ```
+```
 
    npm run dev，可以发现单文件被正确加载了
 

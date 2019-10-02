@@ -251,7 +251,7 @@ copyright:
 
 index:
   showtag:
-  - ICPC模板
+  - 备案号：粤ICP备19122455号
 
 post:
   meta:
@@ -281,7 +281,7 @@ post:
       src: /public/image/alipay.jpg
 
 valine:
-  enable: true
+  enable: false
   autoloader: /public/js/valine.js
   src: //cdn.jsdelivr.net/npm/valine
   appId: 1YGzAgOfmy3CDakvmRhWunLK-gzGzoHsz
